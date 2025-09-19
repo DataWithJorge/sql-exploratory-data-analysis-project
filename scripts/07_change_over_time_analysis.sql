@@ -13,7 +13,7 @@ SQL Functions Used:
 ===============================================================================
 */
 
--- Analyse sales performance over time
+-- Analyze sales performance over time
 -- Quick Date Functions
 SELECT
     YEAR(order_date) AS order_year,
@@ -47,3 +47,4 @@ FROM gold.fact_sales
 WHERE order_date IS NOT NULL
 GROUP BY FORMAT(order_date, 'yyyy-MMM')
 ORDER BY FORMAT(order_date, 'yyyy-MMM');
+
